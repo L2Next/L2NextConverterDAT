@@ -1,0 +1,18 @@
+# Config Yaml.
+# 
+# Info.
+# Both `deserializeToYaml` `deserializeToJson` and `serialize` are an array of objects.
+# Each element in array is an object with two sub fields: 
+# - src : specify a path to a source file you want to deserialize/serialize.
+# - out : specify a path where the deserialized/serialized file should be written to.
+# Leave decrypt/encrypt field as an empty array to skip the enc/dec task.
+
+# Enqueue following files for conversion.
+deserializeToYaml: 
+  - src: 'C:\Projects\Testing\dec-Armorgrp.dat'
+    out: 'C:\Projects\Testing\Armorgrp.yaml'
+
+deserializeToJson: []
+
+# Enqueue following files for encrypt.
+serialize: []
